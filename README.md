@@ -1,6 +1,6 @@
 # rdorta27.github.io
 
-Personal site of Rubén Dorta: Solution Architect | Applied AI & OSS/BSS.
+Personal site of Rubén A. Dorta A.: Solution Architect | Applied AI & OSS/BSS.
 
 One static page, `index.html`, at the repository root, with five sections: home, projects, how I work, experience and contact. No build, no JavaScript, no dependencies.
 
