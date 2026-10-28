@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rubén A. Dorta A. · Solution Architect | Applied AI &amp; OSS/BSS</title>
+<meta name="description" content="Solution Architect em Bogotá. 25 anos de OSS/BSS em telecom por trás de agentes de IA, sistemas RAG e avaliações em Python: o modelo lida com a linguagem, as regras moram no código.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../style.css">
+<link rel="alternate" hreflang="en" href="https://rdorta27.github.io/">
+<link rel="alternate" hreflang="es-419" href="https://rdorta27.github.io/es-419/">
+<link rel="alternate" hreflang="pt-BR" href="https://rdorta27.github.io/pt-br/">
+<link rel="alternate" hreflang="x-default" href="https://rdorta27.github.io/">
+</head>
+<body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+<div class="wrap">
+  <header class="top">
+    <a class="logo" href="index.html"><img src="../favicon.svg" width="34" height="34" alt="">Rubén A. Dorta A.</a>
+    <nav aria-label="Principal"><a href="#projects">Projetos</a><a href="#how">Como trabalho</a><a href="#experience">Experiência</a><a href="#contact">Contato</a><a class="cta" href="https://github.com/rdorta27">GitHub</a></nav>
+    <nav class="langs" aria-label="Idioma"><a href="../" hreflang="en" lang="en">EN</a><a href="../es-419/" hreflang="es-419" lang="es-419">ES</a><a href="/" hreflang="pt-BR" lang="pt-BR" aria-current="true">PT</a></nav>
+  </header>
+
+  <main id="main">
+    <section id="home">
+      <span class="eyebrow">Solution Architect | Applied AI &amp; OSS/BSS</span>
+      <h1>Agentes de IA que <span>respeitam as regras</span>.</h1>
+      <p class="lead">Construo agentes de IA que respeitam as regras de negócio, como construí sistemas de telecom por 25 anos. O modelo lida com a linguagem. As regras que importam moram no código, e nada segue para frente antes de passar por uma avaliação.</p>
+      <div class="row">
+        <a class="btn" href="#projects">Ver os projetos</a>
+        <a class="btn alt" href="#how">Como trabalho</a>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-h">
+      <h2 id="projects-h">Projetos</h2>
+      <div class="grid two">
+        <article class="card project">
+          <h3><a href="https://rdorta27.github.io/flow-audit-site/">Flow Audit</a></h3>
+          <p>Uma bancada de auditoria para fluxos de pedidos BSS. Lê evidências exportadas do catálogo de produtos, da gestão de pedidos, do BPM e do provisioning, reconstrói a jornada de cada pedido e reporta onde eles travam e quanto custa o trabalho manual. Um CLI local-first, sem servidor.</p>
+          <div class="links"><a href="https://github.com/rdorta27/flow-audit">Repo</a></div>
+          <span class="status">Em construção</span>
+        </article>
+        <article class="card project">
+          <h3><a href="https://rdorta27.github.io/sentinel-engine-site/">Sentinel Engine</a></h3>
+          <p>Um agente de atendimento ao cliente para disputas de transações bancárias, em espanhol e português. O cliente cita uma cobrança; o assistente verifica os fatos, aplica a política e abre a disputa só com a confirmação do cliente, ou entrega o caso completo a um assessor.</p>
+          <div class="links"><a href="https://github.com/rdorta27/sentinel-engine">Repo</a></div>
+          <span class="status">v1.1.0 · ativo</span>
+          <p class="note">Líder técnico de um time de 3 pessoas. Começou no <a href="https://github.com/rdorta27/factored-hackathon-2026-sentinel-engine">Factored AI &amp; Data Hackathon 2026</a>; o desenvolvimento continua.</p>
+        </article>
+        <article class="card project">
+          <h3><a href="https://rdorta27.github.io/knowman-site/">Knowman</a></h3>
+          <p>RAG sobre notas em Markdown que responde com os trechos e as linhas exatas por trás de cada resposta. Postgres com pgvector para o índice, Ollama para os embeddings, um servidor MCP para agentes e uma avaliação de groundedness. Roda inteiramente na sua máquina.</p>
+          <div class="links"><a href="https://github.com/rdorta27/knowman">Repo</a></div>
+          <span class="status">v0.2.4</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="how" aria-labelledby="how-h">
+      <h2 id="how-h">Como trabalho</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>O LLM lida com a linguagem. As regras moram no código.</h3>
+          <p>No Sentinel Engine, o modelo só rotula a intenção: mascaramento, política, confirmação e criação do caso são código. No Knowman, um limiar de distância decide o que conta como evidência; fora dele, o modelo nunca é chamado.</p>
+        </div>
+        <div class="card">
+          <h3>Nada segue para frente antes de passar por uma avaliação.</h3>
+          <p>O Sentinel Engine só serve um prompt depois de um conjunto selado de avaliação em dados de retenção passar os seus gates de aceitação. O Knowman guarda cada execução de avaliação, então uma regressão aparece como uma queda.</p>
+        </div>
+        <div class="card">
+          <h3>Local-first, com evidência verificável.</h3>
+          <p>O Knowman roda sobre Postgres, pgvector e Ollama na máquina. O Flow Audit trabalha a partir de exportações de evidências. O Sentinel Engine publica execuções congeladas, cada uma com os seus scripts e um <code>summary.json</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" aria-labelledby="experience-h">
+      <h2 id="experience-h">Experiência</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Independent</h3>
+          <p>Construindo agora: IA aplicada em Python. O objetivo está em cada projeto desta página: um sistema de IA em que um operador regulado pode confiar, porque as regras e as evidências ficam fora do modelo.</p>
+        </div>
+        <div class="card">
+          <h3>Ericsson · Claro Colombia</h3>
+          <p>Os últimos dez dos 25 anos, imerso na Claro Colombia em Bogotá: entrega e arquitetura OSS e BSS, em produção, de ponta a ponta.</p>
+        </div>
+        <div class="card">
+          <h3>Telecom: OSS / BSS, 25 anos</h3>
+          <p>Catálogos de produtos, gestão de pedidos, charging e billing para operadoras de telecomunicações, integrados de ponta a ponta e rodando em produção.</p>
+        </div>
+      </div>
+      <p class="note">A história completa de cada projeto vive no repositório e no site dele, ligados em <a href="#projects">Projetos</a>.</p>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">Contato</h2>
+      <p class="lead">O caminho mais rápido para falar comigo é o LinkedIn.</p>
+      <div class="row">
+        <a class="btn" href="https://www.linkedin.com/in/ruben-a-dorta/">LinkedIn</a>
+        <a class="btn alt" href="https://github.com/rdorta27">GitHub</a>
+        <a class="btn alt" href="https://www.credly.com/users/ruben-dorta/badges">Credly</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Rubén A. Dorta A. · Bogotá, Colombia</span>
+    <a href="https://github.com/rdorta27/flow-audit">Flow Audit</a>
+    <a href="https://github.com/rdorta27/sentinel-engine">Sentinel Engine</a>
+    <a href="https://github.com/rdorta27/knowman">Knowman</a>
+    <a class="grow" href="https://github.com/rdorta27">GitHub</a>
+  </footer>
+</div>
+</body>
+</html>
