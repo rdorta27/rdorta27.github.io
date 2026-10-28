@@ -74,7 +74,7 @@ nav a { text-decoration: none; padding: 8px 0; }
 nav a.cta, .btn { display: inline-flex; align-items: center; min-height: 44px; padding: 10px 20px; border-radius: var(--radius); background: var(--brand); color: var(--on-brand); font-weight: 700; text-decoration: none; }
 nav a.cta:hover, .btn:hover { background: var(--brand-hover); color: var(--on-brand); }
 .btn.alt { background: var(--card); color: var(--ink); border: 1px solid var(--line); font-weight: 600; }
-.btn.alt:hover { color: var(--ink); border-color: var(--line-strong); }
+.btn.alt:hover { background: var(--card); color: var(--ink); border-color: var(--line-strong); }
 
 .eyebrow { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 5px 12px; border-radius: var(--radius); background: var(--tile-accent); color: var(--accent); }
 h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.2; margin: 0; }
@@ -94,6 +94,11 @@ section { padding: 30px 0 40px; display: flex; flex-direction: column; gap: 18px
 #home a { color: var(--tile-accent); }
 #home a:hover { color: #fff5ea; }
 #home .eyebrow { background: var(--deep-card); color: #ffcb6b; }
+/* Buttons on the azulejo band: the theme's color-view components. */
+#home .btn { background: #eef5ff; color: #000000; }
+#home .btn:hover { background: #f0f6ff; color: #000000; }
+#home .btn.alt { background: transparent; color: #ffffff; border: 1px solid var(--deep-border); }
+#home .btn.alt:hover { background: rgba(255, 255, 255, 0.10); color: #ffffff; border-color: #ffffff; }
 
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
 .grid.two { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
