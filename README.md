@@ -8,7 +8,7 @@ Every project card links to the repository and to its `*-site`; this page does n
 
 ## Style
 
-The stylesheet follows the visual language shared with the three project sites: the same layout classes (`wrap`, `top`, `card`, `grid`, `eyebrow`, `btn`, `footer`), serif headings and dark mode. The palette comes from the knowman brand tokens, `branding/tokens.json` in the `rdorta27/knowman` repository: navy and yellow, sharp corners.
+Theme: "Mediterráneo" from Theme Studio. Cream background with white cards on a 10 px radius and a tile-blue top rule, and the hero as the theme's color view: deep azulejo blue with serif headings and a gold accent. Dark mode follows the theme's dark view. Fonts: DM Serif Display for headings and Nunito Sans for body, both OFL and served from `fonts/`, with `OFL.txt` and `SOURCE.md` per family. The palette and tokens come from `theme-studio`, `www/styles/themes/mediterraneo.css`.
 
 ## Preview locally
 
