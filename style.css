@@ -89,20 +89,29 @@ h3 { font-size: 20px; }
 section { padding: 30px 0 40px; display: flex; flex-direction: column; gap: 18px; }
 
 /* Hero: the theme's color view — the deep azulejo band */
-#home {
+#home, .band {
   background: var(--deep); color: #ffffff; border: 1px solid var(--deep-border);
   border-radius: var(--radius); box-shadow: var(--shadow);
   margin-top: 16px; padding: 40px 30px; gap: 16px;
 }
-#home .lead { color: #ffffff; opacity: .85; }
-#home a { color: var(--tile-accent); }
-#home a:hover { color: #fff5ea; }
-#home .eyebrow { background: var(--deep-card); color: #ffcb6b; }
+#home .lead, .band .lead { color: #ffffff; opacity: .85; }
+#home a, .band a { color: var(--tile-accent); }
+#home a:hover, .band a:hover { color: #fff5ea; }
+#home .eyebrow, .band .eyebrow { background: var(--deep-card); color: #ffcb6b; }
 /* Buttons on the azulejo band: the theme's color-view components. */
-#home .btn { background: #eef5ff; color: #000000; }
-#home .btn:hover { background: #f0f6ff; color: #000000; }
-#home .btn.alt { background: transparent; color: #ffffff; border: 1px solid var(--deep-border); }
-#home .btn.alt:hover { background: rgba(255, 255, 255, 0.10); color: #ffffff; border-color: #ffffff; }
+#home .btn, .band .btn { background: #eef5ff; color: #000000; }
+#home .btn:hover, .band .btn:hover { background: #f0f6ff; color: #000000; }
+#home .btn.alt, .band .btn.alt { background: transparent; color: #ffffff; border: 1px solid var(--deep-border); }
+#home .btn.alt:hover, .band .btn.alt:hover { background: rgba(255, 255, 255, 0.10); color: #ffffff; border-color: #ffffff; }
+
+/* Reverse-chronological timeline for the full experience page */
+.timeline { list-style: none; margin: 0; padding: 4px 0 4px 22px; border-left: 2px solid var(--line-strong); display: flex; flex-direction: column; gap: 30px; }
+.timeline .entry { position: relative; display: flex; flex-direction: column; gap: 6px; }
+.timeline .entry::before { content: ""; position: absolute; left: -29px; top: 7px; width: 12px; height: 12px; border-radius: 999px; background: var(--brand); box-shadow: 0 0 0 3px var(--bg); }
+.entry .role { font: 400 22px var(--serif); margin: 0; color: var(--ink); }
+.entry .meta { color: var(--muted); font-weight: 700; font-size: 14px; }
+.entry .context { margin: 0; color: var(--muted); font-size: 15px; }
+.entry .context b { color: var(--ink); }
 
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
 .grid.two { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
