@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rubén Dorta · Solution Architect | Applied AI &amp; OSS/BSS</title>
+<meta name="description" content="Solution Architect in Bogotá. 25 years of telecom OSS/BSS behind AI agents, RAG systems and evaluations in Python: the model handles the language, the rules live in code.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+  <header class="top">
+    <a class="logo" href="index.html"><img src="favicon.svg" width="34" height="34" alt="">Rubén Dorta</a>
+    <nav aria-label="Main"><a href="#projects">Projects</a><a href="#how">How I work</a><a href="#experience">Experience</a><a href="#contact">Contact</a><a class="cta" href="https://github.com/rdorta27">GitHub</a></nav>
+  </header>
+
+  <main id="main">
+    <section id="home">
+      <span class="eyebrow">Solution Architect | Applied AI &amp; OSS/BSS</span>
+      <h1>AI agents that <span>respect the rules</span>.</h1>
+      <p class="lead">I build AI agents that respect business rules, with 25 years of telco behind them. The model handles the language. The rules that matter live in code, and nothing ships before it passes an evaluation.</p>
+      <div class="row">
+        <a class="btn" href="#projects">See the projects</a>
+        <a class="btn alt" href="#how">How I work</a>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-h">
+      <h2 id="projects-h">Projects</h2>
+      <div class="grid two">
+        <article class="card project">
+          <h3><a href="https://github.com/rdorta27/flow-audit">Flow Audit</a></h3>
+          <p>An audit workbench for BSS order flows. It reads evidence exported from the product catalog, order management, BPM and provisioning, reconstructs each order's journey, and reports where orders get stuck and what the manual work costs. A local-first CLI, no server.</p>
+          <div class="links"><a href="https://github.com/rdorta27/flow-audit">Repo</a><a href="https://rdorta27.github.io/flow-audit-site/">Site</a></div>
+          <span class="status">In build</span>
+        </article>
+        <article class="card project">
+          <h3><a href="https://github.com/rdorta27/sentinel-engine">Sentinel Engine</a></h3>
+          <p>A customer-service agent for bank transaction disputes, in Spanish and Portuguese. The customer names a charge; the assistant verifies the facts, applies the policy and opens the dispute only with the customer's confirmation, or files a handoff for an advisor. Technical lead of a 3-person team for the Factored AI &amp; Data Hackathon 2026; development continues.</p>
+          <div class="links"><a href="https://github.com/rdorta27/sentinel-engine">Repo</a><a href="https://rdorta27.github.io/sentinel-engine-site/">Site</a></div>
+          <span class="status">v1.1.0 · active</span>
+        </article>
+        <article class="card project">
+          <h3><a href="https://github.com/rdorta27/knowman">Knowman</a></h3>
+          <p>RAG over Markdown notes that answers with the passages and the exact lines behind every answer. Postgres with pgvector for the index, Ollama for embeddings, an MCP server for agents, and a groundedness evaluation. Runs entirely on your machine.</p>
+          <div class="links"><a href="https://github.com/rdorta27/knowman">Repo</a><a href="https://rdorta27.github.io/knowman-site/">Site</a></div>
+          <span class="status">v0.2.4</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="how" aria-labelledby="how-h">
+      <h2 id="how-h">How I work</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>The LLM handles the language. The rules live in code.</h3>
+          <p>In Sentinel Engine, the model only labels the intent: masking, policy, confirmation and case creation are code. In Knowman, a distance threshold decides what counts as evidence; outside it, the model is never called.</p>
+        </div>
+        <div class="card">
+          <h3>Nothing ships before it passes an evaluation.</h3>
+          <p>Sentinel Engine serves a prompt only after a sealed held-out evaluation passes its acceptance gates. Knowman stores every eval run, so a regression shows up as a drop.</p>
+        </div>
+        <div class="card">
+          <h3>Local-first, with verifiable evidence.</h3>
+          <p>Knowman runs on Postgres, pgvector and Ollama on the machine. Flow Audit works from evidence exports. Sentinel Engine publishes frozen evaluation runs, each with its scripts and a <code>summary.json</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" aria-labelledby="experience-h">
+      <h2 id="experience-h">Experience</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Building now: applied AI in Python</h3>
+          <p>AI agents, RAG systems and evaluations. The aim sits in every project on this page: an AI system a regulated operator can trust, because the rules and the evidence are outside the model.</p>
+        </div>
+        <div class="card">
+          <h3>Ericsson · Claro Colombia</h3>
+          <p>The last ten of the 25 years, embedded with Claro Colombia in Bogotá: OSS and BSS delivery and architecture, in production, end to end.</p>
+        </div>
+        <div class="card">
+          <h3>Telecom: OSS / BSS, 25 years</h3>
+          <p>Product catalogs, order management, charging and billing for telecom operators, integrated end to end and running in production.</p>
+        </div>
+      </div>
+      <p class="note">The full project history lives in each repository and its site, linked in <a href="#projects">Projects</a>.</p>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">Contact</h2>
+      <p class="lead">The fastest way to reach me is LinkedIn.</p>
+      <div class="row">
+        <a class="btn" href="https://www.linkedin.com/in/ruben-a-dorta/">LinkedIn</a>
+        <a class="btn alt" href="https://github.com/rdorta27">GitHub</a>
+        <a class="btn alt" href="https://www.credly.com/users/ruben-dorta/badges">Credly</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Rubén Dorta · Bogotá, Colombia</span>
+    <a href="https://github.com/rdorta27/flow-audit">Flow Audit</a>
+    <a href="https://github.com/rdorta27/sentinel-engine">Sentinel Engine</a>
+    <a href="https://github.com/rdorta27/knowman">Knowman</a>
+    <a class="grow" href="https://github.com/rdorta27">GitHub</a>
+  </footer>
+</div>
+</body>
+</html>
